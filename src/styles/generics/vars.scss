@@ -1,0 +1,29 @@
+// Colors
+$brand-gray-dark: #101025;
+
+// Typography
+$font-family-base: Roboto, sans-serif, Arial;
+:root {
+  --font-size-base: 14px;
+}
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 20px;
+
+// Media queries breakpoints
+$screen-wide: 1280px;
+$screen-desktop: 1024px;
+$screen-tablet: 768px;
+$screen-landscape: 576px;
+$screen-phone: 480px;
+
+// Grid system
+$grid-gap: 24px;
+$grid-gap-sm: 16px;
+$container-width: 1232px;
+
+// Objects

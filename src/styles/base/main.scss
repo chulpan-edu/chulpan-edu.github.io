@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  line-height: $line-height-base;
+  font: {
+    family: $font-family-base;
+    size: var(--font-size-base);
+    weight: $font-weight-normal;
+  }
+
+  //background: url('../assets/images/icons/react.svg') no-repeat 50% 50%;
+}
