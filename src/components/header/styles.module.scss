@@ -1,3 +1,5 @@
+@import "../../styles/mixins/mixin-media-queries";
+
 .header {
   display: flex;
   justify-content: center;
@@ -28,5 +30,9 @@
     background: #1677ff;
     padding: 0 8px;
     font-weight: bold;
+  }
+
+  @include media("max", "sm") {
+    flex-direction: column;
   }
 }
