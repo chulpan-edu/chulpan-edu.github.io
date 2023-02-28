@@ -1,22 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Layout, Menu } from 'antd';
 
-import ReactIcon from '@assets/images/icons/react.svg';
-import { ReactComponent as ViteIcon } from '@assets/images/icons/vite.svg';
-import styles from './style.module.scss';
+import styles from './styles.module.scss';
+
+const { Header: AntdHeader } = Layout;
 
 const Header = () => {
   return (
-    <nav className={styles.header}>
-      Vite
-      <Link to="/about">
-        <ViteIcon />
-      </Link>
-      <span>React</span>
-      <Link to="/about">
-        <img src={ReactIcon} alt={'react-icon'} />
-      </Link>
-      template
-    </nav>
+      <AntdHeader>
+        <div className={styles.logo}>Мин татар телендә сөйләшәм</div>
+        <Menu
+          theme="dark"
+          mode="horizontal"
+          defaultSelectedKeys={['1']}
+          items={new Array(5).fill(null).map((_, index) => {
+            const key = index + 1;
+            return {
+              key,
+              label: `Меню ${key}`,
+            };
+          })}
+        />
+      </AntdHeader>
   );
 };
 
