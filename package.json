@@ -1,7 +1,8 @@
 {
-  "name": "my-vite-react-app",
+  "name": "chulpan-edu",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "homepage": "https://chulpan-edu.github.io/",
   "type": "module",
   "scripts": {
     "predeploy": "vite build",
