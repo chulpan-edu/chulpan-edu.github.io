@@ -1,3 +1,5 @@
+@import "../../styles/mixins/mixin-media-queries";
+
 :global(.ant-layout-content) {
   display: flex;
   justify-content: center;
@@ -11,5 +13,9 @@
     margin: 32px auto;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @include media("max", "sm") {
+      margin: 0;
+    }
   }
 }

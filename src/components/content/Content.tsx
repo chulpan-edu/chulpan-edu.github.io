@@ -11,7 +11,7 @@ type TProps = {
 
 export const Content: FC<TProps> = ({ children }) => {
   return (
-    <AntdContent style={{ padding: '0 50px' }}>
+    <AntdContent>
       <div className={styles['site-layout-content']}>{children}</div>
     </AntdContent>
   );
