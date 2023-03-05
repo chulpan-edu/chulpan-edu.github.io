@@ -11,6 +11,7 @@
     padding: 0 8px;
     font-weight: bold;
     display: flex;
+    justify-content: center;
     flex-shrink: 0;
   }
 
@@ -20,5 +21,8 @@
 
   @include media("max", "sm") {
     flex-direction: column;
+    height: auto;
+    gap: 8px;
+    padding: 8px;
   }
 }
