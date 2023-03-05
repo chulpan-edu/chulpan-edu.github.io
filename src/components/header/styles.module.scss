@@ -1,25 +1,5 @@
 @import "../../styles/mixins/mixin-media-queries";
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-
-  span {
-    color: #61dafb;
-  }
-
-  a {
-    display: flex;
-    align-items: center;
-
-    img {
-      width: 24px;
-    }
-  }
-}
-
 :global(.ant-layout-header) {
   display: flex;
   gap: 32px;
@@ -30,6 +10,12 @@
     background: #1677ff;
     padding: 0 8px;
     font-weight: bold;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  :global(.ant-menu) {
+    width: 100%;
   }
 
   @include media("max", "sm") {

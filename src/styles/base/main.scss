@@ -8,4 +8,11 @@ html {
   }
 
   //background: url('../assets/images/icons/react.svg') no-repeat 50% 50%;
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
